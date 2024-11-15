@@ -49,12 +49,10 @@ function GetNews(){
         })
     }
 
+
     return(
         <div className="container">
             <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search a topic"></input>
-            <div className="choice choice-holder">{endPoint}</div>
-            <div className="choice everything-choice"></div>
-            <div className="choice top-headlines-choice"></div>
             <button className="search-button" onClick={handleSearch} >Search</button>
             <ul className="ul-container">
                 {data.map((item, index) => (
@@ -65,6 +63,7 @@ function GetNews(){
                             <p>{item.author}   {item.publishedAt}</p>
                             <p>{item.description}</p>
                             <p>{item.content}</p>
+                            
                         </li>
                     </div>
                 ))}

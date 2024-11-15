@@ -6,22 +6,6 @@
   margin: 0;
   padding: 0;
 }
-.choice-holder{
-  margin-top: 3px;
-  width: 80px;
-  height: 20px;
-  border: 1px solid black;
-}
-.everything-choice{
-  width: 80px;
-  height: 20px;
-  border: 1px solid black;
-}
-.top-headlines-choice{
-  width: 80px;
-  height: 20px;
-  border: 1px solid black;
-}
 .search-button{
   margin-top: 3px;
 }
