@@ -41,7 +41,14 @@ function GetNews(){
 
             <ul>
                 {data.map((item, index) => (
-                    <li key={index}>{item.author}</li>
+                    <li key={index}>
+                    {item.title}
+                    <img src={item.urlToImage}></img>
+                    <p>{item.author}   {item.publishedAt}</p>
+                    <p>{item.description}</p>
+                    <p>{item.content}</p>
+
+                    </li>
                 ))}
             </ul>
         </div>
