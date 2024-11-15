@@ -3,8 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .ul-container{
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(100 1fr);
   list-style-type: none;
