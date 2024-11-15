@@ -10,8 +10,6 @@ function GetNews(){
 
     const [data, setData] = useState([])    // to hold arrays of data.
 
-    
-
     useEffect(() => {
         fetch(api)
         .then ((res)=> {
@@ -23,7 +21,7 @@ function GetNews(){
             }
         })
         .then((dataArray) => {
-            setData(dataArray.articles)
+            setData(dataArray.articles.filter((item) => item.author)) //this makes sure there is an authors name since if there is none article is probably removed and will leave empty list items
             console.log(dataArray)
         })
         .catch((error) => {
