@@ -63,14 +63,10 @@ function GetNews() {
             <li className="list">
               <p className="title">{item.title}</p>
               <img className="url-image" src={item.urlToImage}></img>
-              <p>
-                {item.author} {item.publishedAt}
-              </p>
+              <p>{item.author} {item.publishedAt}</p>
               <p>{item.description}</p>
               <p>{item.content}</p>
-              <p>
-                <a href={item.url}>{...item.url}</a>
-              </p>
+              <p><a href={item.url}>{...item.url}</a></p>
             </li>
           </div>
         ))}
