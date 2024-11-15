@@ -52,8 +52,11 @@ function GetNews(){
     return(
         <div className="container">
             <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search a topic"></input>
+            <div className="choice-holder">
+                <div className="everything-choice"></div>
+                <div className="top-headlines"></div>
+            </div>
             <button onClick={handleSearch} >Search</button>
-
             <ul className="ul-container">
                 {data.map((item, index) => (
                     <div className="li-container">

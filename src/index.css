@@ -6,6 +6,11 @@
   margin: 0;
   padding: 0;
 }
+.choice-holder{
+  width: 80px;
+  height: 20px;
+  border: 1px solid black;
+}
 .ul-container{
   margin: 0;
   padding: 0;
