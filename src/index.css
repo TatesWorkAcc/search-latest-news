@@ -16,6 +16,12 @@
   grid-template-columns: repeat(100 1fr);
   list-style-type: none;
 }
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .li-container{
   padding: 10px;
   border: 1px solid black;
