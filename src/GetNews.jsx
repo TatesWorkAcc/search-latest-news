@@ -35,11 +35,11 @@ function GetNews(){
     }
 
     return(
-        <div>
+        <div className="container">
             <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search a topic"></input>
             <button onClick={handleSearch} >Search</button>
 
-            <ul className="entire-container">
+            <ul className="ul-container">
                 {data.map((item, index) => (
                     <div className="li-container">
                         <li key={index}>

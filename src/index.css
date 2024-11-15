@@ -1,3 +1,18 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ul-container{
+  display: grid;
+  grid-template-columns: repeat(100 1fr);
+  list-style-type: none;
+}
+.li-container{
+  padding: 10px;
+  border: 1px solid black;
+}
 .url-image{
   max-width: 100%;
   height: auto;
