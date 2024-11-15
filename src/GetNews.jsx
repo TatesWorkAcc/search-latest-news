@@ -39,16 +39,17 @@ function GetNews(){
             <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search a topic"></input>
             <button onClick={handleSearch} >Search</button>
 
-            <ul>
+            <ul className="entire-container">
                 {data.map((item, index) => (
-                    <li key={index}>
-                    {item.title}
-                    <img src={item.urlToImage}></img>
-                    <p>{item.author}   {item.publishedAt}</p>
-                    <p>{item.description}</p>
-                    <p>{item.content}</p>
-
-                    </li>
+                    <div className="li-container">
+                        <li key={index}>
+                                {item.title}
+                            <img className="url-image" src={item.urlToImage}></img>
+                            <p>{item.author}   {item.publishedAt}</p>
+                            <p>{item.description}</p>
+                            <p>{item.content}</p>
+                        </li>
+                    </div>
                 ))}
             </ul>
         </div>
