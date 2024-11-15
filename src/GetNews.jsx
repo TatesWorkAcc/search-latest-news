@@ -31,7 +31,22 @@ function GetNews(){
 
     function handleSearch(){
         setQuery(query)
-
+        fetch(api)
+        .then ((res)=> {
+            if (res.ok) {
+                console.log('Success')
+                return res.json()
+            } else {
+                console.log('Failed')
+            }
+        })
+        .then((dataArray) => {
+            setData(dataArray.articles.filter((item) => item.author)) //this makes sure there is an authors name since if there is none article is probably removed and will leave empty list items
+            console.log(dataArray)
+        })
+        .catch((error) => {
+            console.error('Error')
+        })
     }
 
     return(
