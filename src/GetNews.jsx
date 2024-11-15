@@ -68,7 +68,9 @@ function GetNews() {
               </p>
               <p>{item.description}</p>
               <p>{item.content}</p>
-              <p>{item.url}</p>
+              <p>
+                <a href={item.url}>{...item.url}</a>
+              </p>
             </li>
           </div>
         ))}
