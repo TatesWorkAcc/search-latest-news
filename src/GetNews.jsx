@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function GetNews() {
   const [query, setQuery] = useState("bitcoin"); //what the users search
-  const endPoint = "everything" // Top headlines /v2/top-headlines   Everything /v2/everything   Sources /v2/top-headlines/sources
+  const endPoint = "everything"; // Top headlines /v2/top-headlines   Everything /v2/everything   Sources /v2/top-headlines/sources
   const apiKey = "e4c0f36fe7f446fa97faf58ddbd7318f";
   const api = `https://newsapi.org/v2/${endPoint}?q=${query}&apiKey=${apiKey}`;
 
@@ -60,7 +60,7 @@ function GetNews() {
       <ul className="ul-container">
         {data.map((item, index) => (
           <div className="li-container" key={index}>
-            <li className="list" >
+            <li className="list">
               <p className="title">{item.title}</p>
               <img className="url-image" src={item.urlToImage}></img>
               <p>
